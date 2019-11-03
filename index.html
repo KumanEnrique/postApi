@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.2.1/united/bootstrap.min.css" id="link">
+    <title>Posts JSONPlaceholder</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light bg-light">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search for body..." id="buscador">
+            <button class="btn btn-outline-success my-2 my-sm-0" id="btnBuscador">Search</button>
+        </nav>
+        <div class="card">
+            <div class="card-body">
+                <form id="formulario">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="title" placeholder="Title">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="body" placeholder="Post">
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary">enviar</button>
+                    <div id="error"></div>
+                </form>
+            </div>
+        </div>
+
+        <div class="row mt-2" id="contenedor">
+        </div>
+        <div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form id="formularioA">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="titleA" placeholder="Title">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="bodyA" placeholder="Post">
+                            </div>
+                            <button type="submit" class="btn btn-outline-primary">Save changes</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
